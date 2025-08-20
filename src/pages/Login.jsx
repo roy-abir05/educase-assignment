@@ -62,7 +62,14 @@ const Login = () => {
           }}
         />
 
-        <Link to="/profile">
+        <Link
+          to="/profile"
+          onClick={(e) => {
+            if (type === "inactive") {
+              e.preventDefault(); // stops navigation
+            }
+          }}
+        >
           <Button type={type}>Login</Button>
         </Link>
       </div>

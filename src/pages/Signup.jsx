@@ -246,7 +246,14 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <Link to="/profile">
+      <Link
+        to="/profile"
+        onClick={(e) => {
+          if (type === "inactive") {
+            e.preventDefault(); // stops navigation
+          }
+        }}
+      >
         <Button type={type}>Create Account</Button>
       </Link>
     </div>
