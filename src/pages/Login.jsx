@@ -25,7 +25,7 @@ const Login = () => {
   return (
     <div className="parent-container">
       <div className="mb-8">
-        <div className="title">Signin to your PopX account</div>
+        <div className="title mb-3">Signin to your PopX account</div>
         <div className="subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         </div>
